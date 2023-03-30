@@ -1,0 +1,222 @@
+*{
+    margin:0;
+}
+body{
+    color:white;
+    min-height: 100vh;
+    background: linear-gradient(to right,rgb(161, 95, 158), rgb(252, 2, 239));
+}
+header{
+    background-color: rgb(187, 212, 236); 
+    background: linear-gradient(to left,rgb(161, 95, 158), rgb(252, 2, 239));
+    color: whitesmoke;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: 8px;
+}
+#contacto img, #contactoArticle img{
+    height: 50px;
+}
+#contactoArticle ul{
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+    list-style-type: none;
+}
+#contactoArticle ul li{
+   transition: all 0.5s;    
+}
+#contactoArticle li a:hover{
+    color:black;
+}
+
+#logos{
+    display: flex;
+    flex-direction: row-reverse;
+}
+h1{
+    margin-bottom: 10px;
+    font-size: 3rem;
+    margin-left: 10px;
+    margin-right: 20px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+header  ul{
+    color:black;
+    display: flex;
+    flex-direction:row; 
+    justify-content: space-evenly;
+    list-style-type:none;
+    padding:7px 0;
+    width: 450px;
+    
+}
+a{
+    text-decoration: none;
+    color:white;
+}
+#portada{
+    background-image: url("./img/happy-valentine-s-day-blank-background-pink-paper-cut-clouds-with-3d-red-hearts-illustration-papercut-love-style-wallpaper-have-place-for-text-vector.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-y:-700px ;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+#datosPersonales ul{
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    gap:20px
+}
+
+@keyframes linkanimado {
+    0% {background-color: #ff0534;
+        color:white;
+        padding-left: 0%;
+    }
+    50%{
+        background-color: #ce11a5;
+        padding-left: 5%;
+       }
+    100%{
+        background-color:#ff0534;
+        padding-left: 0%;
+        }
+    }
+        
+#links li:hover{
+        animation: linkanimado;
+        animation-duration: 0.7s;
+        animation-iteration-count: infinite;
+        }
+
+
+#datosPersonales ul li{
+    background-color: none;
+}
+#titulos ul{
+list-style-type: none;
+font-size: 2rem;
+display: flex;
+flex-direction: column;
+gap: 25px;
+}
+#links{
+    width: 30%;
+}
+#links ul{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    height: 100%;
+}
+ul li{
+    background-color: rgb(161, 95, 158);
+    border-radius: 25px;
+    padding: 5px;
+    text-align: center;
+}
+
+#links ul{
+    list-style-type: none;
+    font-size: 2rem;
+    margin-right: 5vh;
+
+}
+
+#foto img{
+    width: 250px;
+    border-radius: 50px;
+    height: 250px;
+    object-fit: cover;
+}
+
+section{
+    display:flex;
+    flex-direction: row;
+}
+#perfil{
+    width:80%;
+    margin-left:auto;
+    margin-right: auto;
+    border:2px solid white;
+    border-radius: 20px;
+    margin-top: 3vh;
+    padding: 30px;
+    font-size: 2rem;
+}
+#perfil h2{
+    text-align: center;
+}
+#perfil p{
+    margin-bottom: 20px;
+}
+header ul li{
+    transition: background-color 0.5s;
+}
+header ul li:hover, #contactoArticle ul li:hover{
+    background-color: antiquewhite;
+    border-radius: 15px;
+    padding:0 10px;
+    color:black;
+}
+header ul li:hover a{
+color:palevioletred;
+}
+
+p{
+    margin-bottom: 10px;
+    text-align: justify;
+}
+h2{
+    margin-bottom: 4px;
+    text-decoration: underline  ;
+}
+.subP{
+    font-size: 1.5rem;
+    margin-left: 25px;
+}
+#datosPersonales{ 
+    padding: 10px;
+}
+
+footer{
+    margin-top: 10px;
+    background-color:rgb(161, 95, 158);
+    text-align: center;
+    font-size: 1.1rem;
+    padding: 9px 0px;
+}
+
+#formulario{    
+    width:70%;
+    margin-left: auto;
+    margin-right: auto;
+    border:1px solid black;
+}
+
+#formContacto{
+    padding: 5;
+    display:flex;
+    flex-direction: column;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+}
+button{
+    background-color: black;
+    color:white;
+    width: 130px;
+    height: 50px;
+    margin: 5px;
+    padding: 5px;
+    border-radius: 50px;
+    font-size: 1.5rem;
+}
